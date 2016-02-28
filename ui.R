@@ -29,7 +29,12 @@ shinyUI(pageWithSidebar(
                      helpText('For the Summary tab, we can select iris variables to show;
              by selecting the check boxes and the changes WILL apply 
              even WITHOUT pressing the GO button. See the HELP Tab for more info.'),
-                      verbatimTextOutput("summary"))
+                      verbatimTextOutput("summary")),
+            tabPanel('Plot/Graph',
+                     helpText('For the Plot/Graph tab, we can select iris variables to show;
+             by selecting the check boxes and the changes WILL apply 
+                              even WITHOUT pressing the GO button. See the HELP Tab for more info.'),
+                     plotOutput("plotOut"))
             
             
         

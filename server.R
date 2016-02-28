@@ -28,5 +28,8 @@ shinyServer(function(input, output) {
         summary(dataset)
     })  
     
+    output$plotOut <- renderPlot({
+        plot(iris[, input$show_vars, drop = FALSE])  
+    })
 
 })
