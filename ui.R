@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)  # for the diamonds dataset
 
 shinyUI(pageWithSidebar(
-    headerPanel('Examples of DataTables'),
+    headerPanel('My ShinyApp'),
     sidebarPanel(
         textInput("caption", "Caption:", "My Help/Documentation Page"),
         helpText('This caption changes reflect on the Main panel (on the right)
@@ -42,4 +42,6 @@ shinyUI(pageWithSidebar(
         )
     )
     
-))
+)
+
+)
